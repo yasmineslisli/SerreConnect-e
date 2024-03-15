@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #10151F;
+        }
+        .screen {
+            background-color: #1A2945;
+            border-radius: 28px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .welcome-message h1, .welcome-message p {
+            color: #FFECC8;
+            text-align: center;
+        }
+        .pin-input, .footer {
+            text-align: center; /* Center everything in the pin-input and footer div */
+            margin: 20px 0;
+        }
+        .pin-label {
+            display: block; /* Make the label a block element to apply text-align correctly */
+            color: #FF6347; /* Change the color to, e.g., tomato. Adjust the color as needed */
+            font-size: 20px; /* Optional: Adjust the size as needed */
+            margin-bottom: 10px; /* Optional: Adds some space between the label and the input */
+        }
+        .keypad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .key {
+            background-color: #2C3E50;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+        }
+        .key.delete, .key.enter {
+            font-size: 24px; /* Adjust size as needed */
+            font-weight: bold; /* Adjust weight as needed */
+        }
+        .key.enter {
+            background-color: #4CAF50; /* Example: a green background */
+            color: white;
+        }
+        .forgot-pin {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const pinInput = document.getElementById('pin');
+          const keypadButtons = document.querySelectorAll('.key');
+          const forgotPinLink = document.querySelector('.forgot-pin');
+        
+          // Handle keypad button click
+          keypadButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              const keyValue = button.textContent;
+        
+              // Check if the button is for deletion
+              if (button.classList.contains('delete')) {
+                pinInput.value = pinInput.value.slice(0, -1); // Remove last digit
+              } else if (pinInput.value.length < 4) {
+                pinInput.value += keyValue; // Add digit to PIN
+              }
+            });
+          });
+        
+          // Handle "Forgot Your PIN Code?" link
+          forgotPinLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default link action
+            alert('Please contact Dev Pole to reset your PIN.');
+            // Here you can add more complex logic, such as displaying a modal or redirecting to a support page.
+          });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+          const pinInput = document.getElementById('pin');
+          const enterButton = document.querySelector('.enter');
+          const correctPIN = '1234'; // The correct PIN
+        
+          enterButton.addEventListener('click', () => {
+            const enteredPIN = pinInput.value;
+            if (enteredPIN === correctPIN) {
+              // PIN is correct, perform success action
+              alert('PIN is correct. Access granted.');
+              window.location.href = 'dash.html';
+              // Optional: Redirect to another page or show a success message/div
+              // window.location.href = 'success_page.html'; // Redirect example
+            } else {
+              // PIN is incorrect, inform the user
+              alert('Incorrect PIN. Please try again.');
+              pinInput.value = ''; // Optionally, clear the input field
+            }
+          });
+        });
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="welcome-message">
+                <h1>Bonjour</h1>
+                <p>Bienvenue à votre serre domotique!</p>
+            </div>
+            <div class="pin-input">
+                <label for="pin" class="pin-label">Enter PIN</label>
+                <input type="password" id="pin" maxlength="4" aria-label="Enter your 4-digit PIN code">
+            </div>
+            <div class="keypad">
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <button class="key enter" aria-label="Enter PIN">
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+                <button class="key">0</button>
+                <button class="key delete" aria-label="Delete last digit">
+                    <i class="fas fa-backspace"></i>
+                </button>
+            </div>
+            <div class="footer">
+                <a href="#" class="forgot-pin">Forgot Your PIN Code?</a>
+            </div>
+        </div>
+    </div>

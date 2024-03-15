@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #10151F;
+  }
+  
+  .screen {
+    background-color: #1A2945;
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .welcome-message h1, .welcome-message p {
+    color: #FFECC8;
+  }
+  
+  .pin-input {
+    margin: 20px 0;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .key {
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  
+  .key.delete {
+    background-color: #E74C3C;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .forgot-pin {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .pin-input {
+    text-align: center; /* Center everything in the pin-input div */
+    margin: 20px 0;
+  }
+  
+  .pin-label {
+    display: block; /* Make the label a block element to apply text-align correctly */
+    color: #FF6347; /* Change the color to, e.g., tomato. Adjust the color as needed */
+    font-size: 20px; /* Optional: Adjust the size as needed */
+    margin-bottom: 10px; /* Optional: Adds some space between the label and the input */
+  }
+  .key.delete {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold; /* Adjust weight as needed */
+  }
+  
