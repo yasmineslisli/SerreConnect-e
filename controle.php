@@ -126,6 +126,7 @@
   </head>
   <body>
     <link rel="stylesheet" href="./style_controle.css" />
+    
     <div>
       <link href="./index_controle.css" rel="stylesheet" />
 
@@ -168,11 +169,7 @@
                   </svg>
                 </div>
               </main>
-              <img
-                src="public/external/rectanglecopy2112-l28p-200h.png"
-                alt="RectangleCopy2112"
-                class="controle-rectangle-copy"
-              />
+              
               <span class="controle-text04"><span>Humidité</span></span>
               <button type="button" id="saveHumidityBtn" class="controle-text14"><span>Enregistrer Humidité</span></button>
 
@@ -258,11 +255,7 @@
                   </svg>
                 </div>
               </main>
-              <img
-                src="public/external/rectanglecopy2112-9yzd-200h.png"
-                alt="RectangleCopy2112"
-                class="controle-rectangle-copy1"
-              />
+              
               <span class="controle-text08"><span>Luminosité</span></span>
               <button type="button" id="saveLuminosityBtn" class="controle-text10"><span>Enregistrer Luminosité</span></button>
 

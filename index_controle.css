@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(16, 21, 31, 1);
 }
 .controle-controle {
   gap: 10px;
@@ -15,7 +16,7 @@
   position: relative;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(16, 21, 31, 1);
 }
 
 
@@ -409,8 +410,8 @@
   font-stretch: normal;
   text-decoration: none;
 }
-#saveTemperatureBtn {
-  background-color: #007bff; /* Change the color as needed */
+#saveTemperatureBtn, #saveHumidityBtn, #saveLuminosityBtn{
+  background-color: #56606b; /* Change the color as needed */
   color: #ffffff; /* Change the text color as needed */
   border: none;
   padding: 10px 20px;
@@ -418,8 +419,8 @@
   cursor: pointer;
 }
 
-#saveTemperatureBtn:hover {
-  background-color: #0056b3; /* Change the color as needed */
+#saveTemperatureBtn:hover, #saveHumidityBtn:hover, #saveLuminosityBtn:hover{
+  background-color: rgba(16, 21, 31, 1); /* Change the color as needed */
 }
 .controle-group40 {
   top: 10px;
@@ -1286,7 +1287,6 @@
   font-size: 2.5rem;
   font-weight: 400;
   fill: #fff;
-  dominant-baseline: central;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1362,7 +1362,6 @@
   font-size: 2.5rem;
   font-weight: 400;
   fill: #fff;
-  dominant-baseline: central;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1414,7 +1413,6 @@
   font-size: 2.5rem;
   font-weight: 400;
   fill: #fff;
-  dominant-baseline: central;
   font-variant-numeric: tabular-nums;
 }
 

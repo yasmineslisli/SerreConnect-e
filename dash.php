@@ -1,7 +1,9 @@
+
+
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>exported project</title>
+    <title>Ferme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -345,8 +347,6 @@
     <link rel="stylesheet" href="./style_dash.css" />
     <div>
       <link href="./index_dash.css" rel="stylesheet" />
-      <link href="./index_controle.css" rel="stylesheet" />
-
 
       <div class="dashboard-container">
         <div class="dashboard-dashboard">
@@ -452,11 +452,6 @@
                     />
                   </div>
                   <span class="dashboard-text027"><span>Mois</span></span>
-                  <img
-                    src="public/external/arrowcopy568-sj3m.svg"
-                    alt="ArrowCopy568"
-                    class="dashboard-arrow-copy"
-                  />
                 </div>
                 
               </div>
@@ -566,11 +561,6 @@
                     />
                   </div>
                   <span class="dashboard-text057"><span>Mois</span></span>
-                  <img
-                    src="public/external/arrowcopy5117-uvnm.svg"
-                    alt="ArrowCopy5117"
-                    class="dashboard-arrow-copy2"
-                  />
                 </div>
                 
                 </div>
@@ -580,21 +570,11 @@
               <div class="dashboard-group63">
                 <div class="dashboard-group62">
                   <div class="dashboard-group">
-                
-                    <img
-                      src="public/external/oval5131-fa2t-200h.png"
-                      alt="Oval5131"
-                      class="dashboard-oval06"
-                    />
                   </div>
                   <div class="dashboard-settings"></div>
                   <div>
                     <span class="dashboard-text059"><span>Ayoub</span></span>
-                    <img
-                      src="public/external/arrow5143-fgx.svg"
-                      alt="Arrow5143"
-                      class="dashboard-arrow"
-                    />
+
                     <div class="dashboard-group1">
                       <img
                         src="public/external/mask5146-vytp-200h.png"
@@ -698,162 +678,70 @@
                   </div>
                 </div>
                 <div class="dashboard-nav">
-                  <div class="controle-nav">
-                    <div>
+                  <div class="dashboard-rectangle2">
+                    <img
+                      src="public/external/mask5170-rcin.svg"
+                      alt="Mask5170"
+                      class="dashboard-mask2"
+                    />
+                    <div class="dashboard-group2">
                       <img
-                        src="public/external/mask1963-xkll.svg"
-                        alt="Mask1963"
-                        class="controle-mask2"
+                        src="public/external/shape15374-upua.svg"
+                        alt="Shape15374"
+                        class="dashboard-shape1"
+                      />
+                      <img
+                        src="public/external/shape25377-wcm.svg"
+                        alt="Shape25377"
+                        class="dashboard-shape2"
                       />
                     </div>
-                    <div class="controle-nav1">
-                      <div class="controle-rectangle2">
+                    <div class="dashboard-noun-home1998078">
+                      <div class="dashboard-noun-home2976614">
                         <img
-                          src="public/external/mask1922-v1k.svg"
-                          alt="Mask1922"
-                          class="controle-mask3"
+                          src="public/external/shape5175-kg2.svg"
+                          alt="Shape5175"
+                          class="dashboard-shape3"
                         />
-                        <div class="controle-noun-home1998078">
-                          <div class="controle-noun-home2976614">
-                            <a href="dash.html"> <!-- Ajoutez le lien ici -->
-                              <img
-                                src="public/external/shape1934-0oon.svg"
-                                alt="Shape1934"
-                                class="controle-shape3"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="controle-group6">
-                        <div class="controle-group21">
-                          <a href="controle.html">
-                          <img
-                            src="public/external/shape11925-hywe.svg"
-                            alt="Shape11925"
-                            class="controle-shape11"
-                          />
-                          <img
-                            src="public/external/shape21928-l4md.svg"
-                            alt="Shape21928"
-                            class="controle-shape21"
-                          />
-                        </a>
-                        </div>
-                                <div class="controle-group30-copy8">
-                                  <div class="controle-noun-security1002240">
-                                    <img
-                                      src="public/external/shape1942-0mzl.svg"
-                                      alt="Shape1942"
-                                      class="controle-shape4"
-                                    />
-                                    <img
-                                      src="/combinedshape1945-6zmp2.svg"
-                                      alt="CombinedShape1945"
-                                      class="controle-combined-shape1"
-                                    />
-                                  </div>
-                                </div>
-                        <div class="controle-group72">
-                          <div class="controle-group30">
-                            <div class="controle-group31">
-                              <a href="dash.html"> <!-- Ajoutez le lien ici -->
-                                <img
-                                src="public/external/rectanglecopy51952-tb4r-200h.png"
-                                alt="RectangleCopy51952"
-                                class="controle-rectangle-copy5"
-                              />
-                              </a>
-                              
-                              <img
-                                src="public/external/rectanglecopy21953-y6p-200h.png"
-                                alt="RectangleCopy21953"
-                                class="controle-rectangle-copy2"
-                              />
-                              <img
-                                src="public/external/rectangle1954-xl11-200h.png"
-                                alt="Rectangle1954"
-                                class="controle-rectangle3"
-                              />
-                              <img
-                                src="public/external/rectanglecopy31955-wjqs-200h.png"
-                                alt="RectangleCopy31955"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="controle-group30-copy5">
-                        <div class="controle-mail">
-                          <div class="controle-logout">
-                            <img
-                              src="public/external/path1960-fq3.svg"
-                              alt="Path1960"
-                              class="controle-path6"
-                            />
-                            <img
-                              src="public/external/path1961-2g6t.svg"
-                              alt="Path1961"
-                              class="controle-path7"
-                            />
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="controle-group6">
-                    <div class="controle-group21">
-                      <a href="controle.html">
-                      <img
-                        src="public/external/shape11925-hywe.svg"
-                        alt="Shape11925"
-                        class="controle-shape11"
-                      />
-                      <img
-                        src="public/external/shape21928-l4md.svg"
-                        alt="Shape21928"
-                        class="controle-shape21"
-                      />
-                    </a>
+                  <div class="dashboard-group6">
+                    <div class="dashboard-group30-copy8">
+                      <div class="dashboard-noun-security1002240">
+                        <img
+                          src="public/external/shape5212-yygb.svg"
+                          alt="Shape5212"
+                          class="dashboard-shape4"
+                        />
+                        <img
+                          src="public/external/combinedshape5215-3u0kgd.svg"
+                          alt="CombinedShape5215"
+                          class="dashboard-combined-shape"
+                        />
+                      </div>
                     </div>
-                            <div class="controle-group30-copy8">
-                              <div class="controle-noun-security1002240">
-                                <img
-                                  src="public/external/shape1942-0mzl.svg"
-                                  alt="Shape1942"
-                                  class="controle-shape4"
-                                />
-                                <img
-                                  src="/combinedshape1945-6zmp2.svg"
-                                  alt="CombinedShape1945"
-                                  class="controle-combined-shape1"
-                                />
-                              </div>
-                            </div>
-                    <div class="controle-group72">
-                      <div class="controle-group30">
-                        <div class="controle-group31">
-                          <a href="dash.html"> <!-- Ajoutez le lien ici -->
-                            <img
-                            src="public/external/rectanglecopy51952-tb4r-200h.png"
-                            alt="RectangleCopy51952"
-                            class="controle-rectangle-copy5"
-                          />
-                          </a>
-                          
+                    <div>
+                      <div class="dashboard-group30">
+                        <div class="dashboard-group31">
                           <img
-                            src="public/external/rectanglecopy21953-y6p-200h.png"
-                            alt="RectangleCopy21953"
-                            class="controle-rectangle-copy2"
+                            src="public/external/rectanglecopy55222-fh7q-200h.png"
+                            alt="RectangleCopy55222"
+                            class="dashboard-rectangle-copy5"
                           />
                           <img
-                            src="public/external/rectangle1954-xl11-200h.png"
-                            alt="Rectangle1954"
-                            class="controle-rectangle3"
+                            src="public/external/rectanglecopy25223-7nu3-200h.png"
+                            alt="RectangleCopy25223"
                           />
                           <img
-                            src="public/external/rectanglecopy31955-wjqs-200h.png"
-                            alt="RectangleCopy31955"
+                            src="public/external/rectangle5224-nkw9-200h.png"
+                            alt="Rectangle5224"
+                            class="dashboard-rectangle"
+                          />
+                          <img
+                            src="public/external/rectanglecopy35225-kuu9-200h.png"
+                            alt="RectangleCopy35225"
+                            class="dashboard-rectangle-copy3"
                           />
                         </div>
                       </div>
@@ -884,7 +772,6 @@
               class="dashboard-path2-path2-path2-path2-path2-path3-path3-mask2"
             >
               <div class="dashboard-maskgroup2">
-                
                 <img
                   src="public/external/path45255-m0ai.svg"
                   alt="Path45255"
@@ -979,11 +866,7 @@
                   />
                 </div>
                 <span class="dashboard-text074"><span>Mois</span></span>
-                <img
-                  src="public/external/arrowcopy5288-1dk.svg"
-                  alt="ArrowCopy5288"
-                  class="dashboard-arrow-copy4"
-                />
+
               </div>
               
             </div>
@@ -1011,120 +894,46 @@
                   </div>
                 </div>
                 <div class="dashboard-text092">
-                  <span class="dashboard-text093">
-                    <span>
-                      Bienvenue dans le système de suivi de ta serre domotique!
-                    </span>
-                  </span>
-                  <span class="dashboard-text095">
+                <span class="dashboard-text095">
                     <span>Salut, Ayoub</span>
                   </span>
-                  <div class="dashboard-group18">
-                    <span class="dashboard-text097">
-                      <span>Température intérieure</span>
-                    </span>
-                    <img
-                      src="public/external/path5314-tlbk.svg"
-                      alt="Path5314"
-                      class="dashboard-path3"
-                    />
-                    <div class="dashboard-group17">
-                      <span class="dashboard-text099"><span>+25</span></span>
-                      <span class="dashboard-text101">C</span>
-                      <img
-                        src="public/external/oval5318-p1fk-200h.png"
-                        alt="Oval5318"
-                        class="dashboard-oval10"
-                      />
-                    </div>
+                  <span class="dashboard-text093">
+                  <span>
+                    Bienvenue dans le système de suivi de ta serre domotique!
+                  </span>
+                  <div>
+                    <span>Température intérieure : </span><span id="temperature"></span><span>°C</span>
+                    <br> 
+                    <span>Humidité : </span><span id="humidite"></span><span>%</span>
+                    <br> 
+                    <span>Luminosité : </span><span id="luminosite"></span><span>%</span>
                   </div>
+                </span>
+                <script src="js/readData.js"></script>
+
                   <div class="dashboard-group16"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="dashboard-group77">
-            <div class="dashboard-group741">
-              <div class="dashboard-group4">
-                <div class="dashboard-path4">
-                  <div class="dashboard-path-group-mask1">
-                    <img
-                      src="public/external/vector5426-geeo.svg"
-                      alt="Vector5426"
-                      class="dashboard-vector"
-                    />
-                    <div class="dashboard-alertwarning">
-                      <img
-                        src="public/external/vector5421-qz8l.svg"
-                        alt="Vector5421"
-                        class="dashboard-vector1"
-                      />
-                      <div class="dashboard-group28">
-                        <span class="dashboard-text102">
-                          <span>Something wrong</span>
-                        </span>
-                        <span class="dashboard-text104">
-                          <span>Ea dolor esse non anim laboris.</span>
-                        </span>
-                      </div>
-                      <img
-                        src="public/external/vector5430-rwz.svg"
-                        alt="Vector5430"
-                        class="dashboard-vector2"
-                      />
-                    </div>
-                    <img
-                      src="public/external/vector5407-sctl.svg"
-                      alt="Vector5407"
-                      class="dashboard-vector3"
-                    />
-                    <div class="dashboard-alertinfo"></div>
-                    <img
-                      src="public/external/vector5418-r61g.svg"
-                      alt="Vector5418"
-                      class="dashboard-vector4"
-                    />
-                    <div class="dashboard-group281">
-                      <span class="dashboard-text106"><span>Info</span></span>
-                      <span class="dashboard-text108">
-                        <span>Ea dolor esse non anim laboris.</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="public/external/vector5406-hp1.svg"
-                alt="Vector5406"
-                class="dashboard-vector5"
-              />
-            </div>
-            <div class="dashboard-alertwarning1">
-              <img
-                src="public/external/vector5410-fo9.svg"
-                alt="Vector5410"
-                class="dashboard-vector6"
-              />
-              <div class="dashboard-group282">
-                <span class="dashboard-text110"><span>Warning</span></span>
-                <span class="dashboard-text112">
-                  <span>Ea dolor esse non anim laboris.</span>
-                </span>
-              </div>
-              <img
-                src="public/external/vector5428-d3d3.svg"
-                alt="Vector5428"
-                class="dashboard-vector7"
-              />
-            </div>
-          </div>
-          <img
-            src="public/external/whatsappimage20240207at161515372-jkw-400h.png"
-            alt="WhatsAppImage20240207at161515372"
-            class="dashboard-whats-app-image20240207at16151"
-          />
+
+          <img id="latestImage" src="" alt="Dernière image" class="dashboard-whats-app-image20240207at16151"/>
+          <script>
+            function fetchLatestImage() {
+                fetch('/dashboard/latest-image.php') // Mise à jour du chemin pour correspondre à l'emplacement du script PHP
+                    .then(response => response.json())
+                    .then(data => {
+                        const imageUrl = '/dashboard/images/' + data.image_url; // Mise à jour du chemin pour correspondre à votre structure
+                        document.getElementById('latestImage').src = imageUrl;
+                    })
+                    .catch(error => console.error("Erreur lors de la récupération de l'image", error));
+            }
+
+            // Interroger le serveur toutes les 5 secondes pour la dernière image
+            setInterval(fetchLatestImage, 1000);
+          </script>
         </div>
       </div>
     </div>
-  </body>
+  </body>
 </html>
