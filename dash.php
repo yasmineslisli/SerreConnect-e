@@ -347,6 +347,7 @@
     <link rel="stylesheet" href="./style_dash.css" />
     <div>
       <link href="./index_dash.css" rel="stylesheet" />
+      <link href="./style1.css" rel="stylesheet" />
 
       <div class="dashboard-container">
         <div class="dashboard-dashboard">
@@ -428,31 +429,7 @@
               </div>
               <div class="dashboard-group60">
                 <span class="dashboard-text025"><span>Température</span></span>
-                <div class="dashboard-group8-copy">
-                  <img
-                    src="public/external/rectanglecopy559-54dw-200h.png"
-                    alt="RectangleCopy559"
-                    class="dashboard-rectangle-copy"
-                  />
-                  <div class="dashboard-group22">
-                    <img
-                      src="public/external/shape561-646g.svg"
-                      alt="Shape561"
-                      class="dashboard-shape"
-                    />
-                    <img
-                      src="public/external/oval565-bjt-200h.png"
-                      alt="Oval565"
-                      class="dashboard-oval02"
-                    />
-                    <img
-                      src="public/external/ovalcopy566-ef1h-200h.png"
-                      alt="OvalCopy566"
-                      class="dashboard-oval-copy"
-                    />
-                  </div>
-                  <span class="dashboard-text027"><span>Mois</span></span>
-                </div>
+                
                 
               </div>
             </div>
@@ -538,30 +515,7 @@
               </div>
               <div class="dashboard-group601">
                 <span class="dashboard-text055"><span>Humidité</span></span>
-                <div class="dashboard-group8-copy1">
-                  <img
-                    src="public/external/rectanglecopy5108-d0p-200h.png"
-                    alt="RectangleCopy5108"
-                    class="dashboard-rectangle-copy1"
-                  />
-                  <div class="dashboard-group222">
-                    <img
-                      src="public/external/shape5110-ao4l.svg"
-                      alt="Shape5110"
-                    />
-                    <img
-                      src="public/external/oval5114-5al-200h.png"
-                      alt="Oval5114"
-                      class="dashboard-oval05"
-                    />
-                    <img
-                      src="public/external/ovalcopy5115-45kl-200h.png"
-                      alt="OvalCopy5115"
-                      class="dashboard-oval-copy1"
-                    />
-                  </div>
-                  <span class="dashboard-text057"><span>Mois</span></span>
-                </div>
+                
                 
                 </div>
               </div>
@@ -677,94 +631,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="dashboard-nav">
-                  <div class="dashboard-rectangle2">
-                    <img
-                      src="public/external/mask5170-rcin.svg"
-                      alt="Mask5170"
-                      class="dashboard-mask2"
-                    />
-                    <div class="dashboard-group2">
-                      <img
-                        src="public/external/shape15374-upua.svg"
-                        alt="Shape15374"
-                        class="dashboard-shape1"
-                      />
-                      <img
-                        src="public/external/shape25377-wcm.svg"
-                        alt="Shape25377"
-                        class="dashboard-shape2"
-                      />
-                    </div>
-                    <div class="dashboard-noun-home1998078">
-                      <div class="dashboard-noun-home2976614">
-                        <img
-                          src="public/external/shape5175-kg2.svg"
-                          alt="Shape5175"
-                          class="dashboard-shape3"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dashboard-group6">
-                    <div class="dashboard-group30-copy8">
-                      <div class="dashboard-noun-security1002240">
-                        <img
-                          src="public/external/shape5212-yygb.svg"
-                          alt="Shape5212"
-                          class="dashboard-shape4"
-                        />
-                        <img
-                          src="public/external/combinedshape5215-3u0kgd.svg"
-                          alt="CombinedShape5215"
-                          class="dashboard-combined-shape"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="dashboard-group30">
-                        <div class="dashboard-group31">
-                          <img
-                            src="public/external/rectanglecopy55222-fh7q-200h.png"
-                            alt="RectangleCopy55222"
-                            class="dashboard-rectangle-copy5"
-                          />
-                          <img
-                            src="public/external/rectanglecopy25223-7nu3-200h.png"
-                            alt="RectangleCopy25223"
-                          />
-                          <img
-                            src="public/external/rectangle5224-nkw9-200h.png"
-                            alt="Rectangle5224"
-                            class="dashboard-rectangle"
-                          />
-                          <img
-                            src="public/external/rectanglecopy35225-kuu9-200h.png"
-                            alt="RectangleCopy35225"
-                            class="dashboard-rectangle-copy3"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dashboard-group30-copy5">
-                    <div class="dashboard-mail">
-                      <div class="dashboard-logout">
-                        <img
-                          src="public/external/path5230-93vc.svg"
-                          alt="Path5230"
-                          class="dashboard-path"
-                        />
-                        <img
-                          src="public/external/path5231-nta.svg"
-                          alt="Path5231"
-                          class="dashboard-path1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a href="controle.php" class="arrow1 right">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
+  </svg>
+</a>
               </div>
+              
             </div>
           </div>
           <div class="dashboard-group66">
@@ -842,44 +715,10 @@
             </div>
             <div class="dashboard-group602">
               <span class="dashboard-text072"><span>Luminosité</span></span>
-              <div class="dashboard-group8-copy2">
-                <img
-                  src="public/external/rectanglecopy5279-uhja-200h.png"
-                  alt="RectangleCopy5279"
-                  class="dashboard-rectangle-copy2"
-                />
-                <div class="dashboard-group224">
-                  <img
-                    src="public/external/shape5281-soia.svg"
-                    alt="Shape5281"
-                    class="dashboard-shape5"
-                  />
-                  <img
-                    src="public/external/oval5285-iv6-200h.png"
-                    alt="Oval5285"
-                    class="dashboard-oval09"
-                  />
-                  <img
-                    src="public/external/ovalcopy5286-ykr-200h.png"
-                    alt="OvalCopy5286"
-                    class="dashboard-oval-copy2"
-                  />
-                </div>
-                <span class="dashboard-text074"><span>Mois</span></span>
-
-              </div>
+              
               
             </div>
-            <div class="dashboard-group582">
-              <span class="dashboard-text076"><span>Jan</span></span>
-              <span class="dashboard-text078"><span>Fev</span></span>
-              <span class="dashboard-text080"><span>Mar</span></span>
-              <span class="dashboard-text082"><span>Avr</span></span>
-              <span class="dashboard-text084"><span>Mai</span></span>
-              <span class="dashboard-text086"><span>Juin</span></span>
-              <span class="dashboard-text088"><span>Juil</span></span>
-              <span class="dashboard-text090"><span>Aou</span></span>
-            </div>
+            
           </div>
           <div class="dashboard-group76">
             <div class="dashboard-group74">
@@ -916,8 +755,9 @@
               </div>
             </div>
           </div>
-
+          
           <img id="latestImage" src="" alt="Dernière image" class="dashboard-whats-app-image20240207at16151"/>
+          
           <script>
             function fetchLatestImage() {
                 fetch('/dashboard/latest-image.php') // Mise à jour du chemin pour correspondre à l'emplacement du script PHP
@@ -932,8 +772,10 @@
             // Interroger le serveur toutes les 5 secondes pour la dernière image
             setInterval(fetchLatestImage, 1000);
           </script>
+          
         </div>
       </div>
+      
     </div>
   </body>
 </html>

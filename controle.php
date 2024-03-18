@@ -26,6 +26,7 @@
         background-color: var(--dl-color-gray-white);
 
       }
+      
       </style>
 
         
@@ -126,14 +127,21 @@
   </head>
   <body>
     <link rel="stylesheet" href="./style_controle.css" />
-    
+    <link rel="stylesheet" href="./style.scss" />
+
     <div>
       <link href="./index_controle.css" rel="stylesheet" />
+      <link href="./style1.css" rel="stylesheet" />
 
       <div class="controle-container">
         <div class="controle-controle">
           <div class="controle-group65">
-            
+          <a href="dash.php" class="arrow left">
+  <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+  </svg>  
+    </a>
             <div class="controle-group651">
               <main class="app">
                 <div class="dial-containerhum">
@@ -171,54 +179,9 @@
               </main>
               
               <span class="controle-text04"><span>Humidité</span></span>
-              <button type="button" id="saveHumidityBtn" class="controle-text14"><span>Enregistrer Humidité</span></button>
+              <button type="button" id="saveHumidityBtn" class="controle-text14"><span>Enregistrer</span></button>
 
-              <div class="controle-group39">
-                
-                
-                <div class="controle-nounconditionerwithcoldair1218796">
-                  
-                  <img
-                    src="public/external/shape2182-d9s.svg"
-                    alt="Shape2182"
-                    class="controle-shape"
-                  />
-                  <img
-                    src="public/external/rectangle2186-8a4q-200h.png"
-                    alt="Rectangle2186"
-                    class="controle-rectangle1"
-                  />
-                  <img
-                    src="public/external/rectangle2187-jsab-200h.png"
-                    alt="Rectangle2187"
-                  />
-                  <img
-                    src="public/external/path2188-9b9k.svg"
-                    alt="Path2188"
-                    class="controle-path1"
-                  />
-                  <img
-                    src="public/external/path2189-uyw.svg"
-                    alt="Path2189"
-                    class="controle-path2"
-                  />
-                  <img
-                    src="public/external/path2190-bklq.svg"
-                    alt="Path2190"
-                    class="controle-path3"
-                  />
-                  <img
-                    src="public/external/path2191-z1jp.svg"
-                    alt="Path2191"
-                    class="controle-path4"
-                  />
-                  <img
-                    src="public/external/path2192-wgdm.svg"
-                    alt="Path2192"
-                    class="controle-path5"
-                  />
-                </div>
-              </div>
+              
             </div>
 
             <div class="controle-group66">
@@ -257,24 +220,9 @@
               </main>
               
               <span class="controle-text08"><span>Luminosité</span></span>
-              <button type="button" id="saveLuminosityBtn" class="controle-text10"><span>Enregistrer Luminosité</span></button>
+              <button type="button" id="saveLuminosityBtn" class="controle-text10"><span>Enregistrer</span></button>
 
-              <div class="controle-group391">
-                <img
-                  src="public/external/oval2195-uho8-200h.png"
-                  alt="Oval2195"
-                  class="controle-oval1"
-                />
-                <div class="controle-nounlamp1634888">
-                  <div class="controle-group1">
-                    <img
-                      src="public/external/combinedshape2198-t1au.svg"
-                      alt="CombinedShape2198"
-                      class="controle-combined-shape"
-                    />
-                  </div>
-                </div>
-              </div>
+              
             </div>
             
             <div class="controle-group68">
@@ -315,30 +263,33 @@
               </main>
               
             <span class="controle-text12"><span>Température</span></span>
-            <button type="button" id="saveTemperatureBtn" class="controle-text14"><span>Enregistrer Température</span></button>
+            <button type="button" id="saveTemperatureBtn" class="controle-text14"><span>Enregistrer</span></button>
               
 
 
-              <div class="controle-group40">
-                <img
-                  src="public/external/oval2625-xk7-200h.png"
-                  alt="Oval2625"
-                  class="controle-oval2"
-                />
-                
-                <img src="public/external/shape2625-z2d.svg" alt="Shape2625" />
-              </div>
+              
             </div>
             
+            <a href="dash.php" class="arrow right">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
+  </svg>
+</a>
+
             
 
           </div>
           
+
+          
+    </div>
+
+
             
           </div>
         </div>
       </div>
-    </div>
+      
   </body>
 
   <script>
