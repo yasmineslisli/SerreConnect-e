@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Path to your JSON file, adjust as necessary
     const filePath = './data_arduino.json';
 
     fetch(filePath)
@@ -11,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('humidite').textContent = data.humidite;
             document.getElementById('luminosite').textContent = data.luminosite;
             document.getElementById('temperature').textContent = data.temperature;
+            
+            document.getElementById('humidity-display').textContent = data.humidite;
+            document.getElementById('luminosity-display').textContent = data.luminosite;
+            document.getElementById('temperature-display').textContent = data.temperature;
+            
         })
         .catch(error => console.error('Error fetching the JSON file:', error));
 });

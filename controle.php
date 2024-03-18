@@ -30,7 +30,7 @@
       
       </style>
 
-        
+ 
     <link
       rel="stylesheet"
       href="https://unpkg.com/animate.css@4.1.1/animate.css"
@@ -129,31 +129,26 @@
   <body>
     <link rel="stylesheet" href="./style_controle.css" />
     <link rel="stylesheet" href="./style.scss" />
+    
 
-    <div>
+      <div>
       <link href="./index_controle.css" rel="stylesheet" />
       <link href="./style1.css" rel="stylesheet" />
 
       <div class="controle-container">
         <div class="controle-controle">
           <div class="controle-group65">
+          
           <a href="dash.php" class="arrow left">
   <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
     <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
 	45.63,75.8 0.375,38.087 45.63,0.375 "/>
   </svg>  
     </a>
+
             <div class="controle-group651">
               <main class="app">
                 <div class="dial-containerhum">
-
-                <?php
-                  $defaultTemperature = file_get_contents('temperature.txt');
-
-                  $defaultHumidity = file_get_contents('humidity.txt');
-
-                  $defaultLuminosity = file_get_contents('luminosity.txt');
-                  ?>
                   <svg class="dialhum" viewBox="0 0 400 400">
                     <defs>
                       <linearGradient id="humidity-linear" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -166,7 +161,7 @@
                     <circle class="dial__centerhum" id="humidity-dial-center" cx="50%" cy="50%" r="120" />
                     <text class="dial__humidity" x="50%" y="50%" text-anchor="middle">
                       <!--<tspan id="humidity-display" style="font-size: 2.5rem; fill: white">75</tspan>-->
-                      <tspan id="humidity-display" style="font-size: 2.5rem; fill: white"><?php echo $defaultHumidity; ?></tspan>
+                      <tspan id="humidity-display" class="humidite" style="font-size: 2.5rem; fill: white"></tspan>
 
 
                       <tspan class="dial__temp-unitshum" style="font-size: 2.5rem; fill: white">%</tspan>
@@ -189,13 +184,6 @@
               
               <main class="app">
                 <div class="dial-containerlum">
-                <?php
-                  $defaultTemperature = file_get_contents('temperature.txt');
-
-                  $defaultHumidity = file_get_contents('humidity.txt');
-
-                  $defaultLuminosity = file_get_contents('luminosity.txt');
-                  ?>
                   <svg class="diallum" viewBox="0 0 400 400">
                     <defs>
                       <linearGradient id="luminosity-linear" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -208,7 +196,7 @@
                     <circle class="dial__centerlum" id="luminosity-dial-center" cx="50%" cy="50%" r="120" />
                     <text class="dial__luminosity" x="50%" y="50%" text-anchor="middle">
                       <!--<tspan id="luminosity-display" style="font-size: 2.5rem; fill: white"></tspan>-->
-                      <tspan id="luminosity-display" style="font-size: 2.5rem; fill: white"><?php echo $defaultLuminosity; ?></tspan>
+                      <tspan id="luminosity-display" class="luminosite" style="font-size: 2.5rem; fill: white"></tspan>
 
                       <tspan class="dial__temp-unitslum" style="font-size: 2.5rem; fill: white">%</tspan>
                     </text>
@@ -229,16 +217,9 @@
             <div class="controle-group68">
               <main class="app">
                 <div class="dial-container">
-                <?php
-                  $defaultTemperature = file_get_contents('temperature.txt');
-
-                  $defaultHumidity = file_get_contents('humidity.txt');
-
-                  $defaultLuminosity = file_get_contents('luminosity.txt');
-                  ?>
-            
                   <svg class="dial" viewBox="0 0 400 400">
                     <defs>
+                      
                       <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stop-color="#e5e5e5" />
                         <stop offset="100%" stop-color="#e5e5e5" stop-opacity="0" />
@@ -249,7 +230,7 @@
                     <line class="dial__tick" x1="17%" x2="83%" y1="50%" y2="50%" />
                     <circle class="dial__center" id="dial-center" cx="50%" cy="50%" r="120" />
                     <text class="dial__temp" x="50%" y="50%" text-anchor="middle">
-                      <tspan id="temp-display"><?php echo $defaultTemperature; ?></tspan>
+                      <tspan id="temp-display" class="temperature"></tspan>
                       
                       <tspan class="dial__temp-units" style="font-size: 2.5rem; fill: white">&deg;C</tspan>
                     </text>
@@ -290,8 +271,28 @@
           </div>
         </div>
       </div>
-      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filePath = './data_arduino.json';
+
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Data:', data); // Debugging: Log the data object
+                    document.getElementById('humidity-display').textContent = data.humidite;
+                    document.getElementById('luminosity-display').textContent = data.luminosite;
+                    document.getElementById('temp-display').textContent = data.temperature;
+                })
+                .catch(error => console.error('Error fetching or parsing JSON:', error));
+        });
+    </script>
   </body>
+
 
   <script>
     const humidityDisplay = document.querySelector("#humidity-display");
@@ -594,19 +595,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var defaultTemperature = document.getElementById('defaultTemperature').value;
-    var tempDisplay = document.getElementById('temp-display');
-    if (tempDisplay) {
-        tempDisplay.textContent = defaultTemperature;
-    } else {
-        console.error('Element with ID temp-display not found.');
-    }
-});
-
 </script>
 
 </html>
