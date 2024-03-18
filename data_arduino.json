@@ -1,1 +1,5 @@
-{"humidite":100,"luminosite":50,"temperature":25}
+{
+    "humidite": "57",
+    "luminosite": "11",
+    "temperature": "24.9"
+}

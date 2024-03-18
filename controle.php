@@ -283,7 +283,7 @@
                     return response.json();
                 })
                 .then(data => {
-                    console.log('Data:', data); // Debugging: Log the data object
+                    console.log('Data:', data); 
                     document.getElementById('humidity-display').textContent = data.humidite;
                     document.getElementById('luminosity-display').textContent = data.luminosite;
                     document.getElementById('temp-display').textContent = data.temperature;

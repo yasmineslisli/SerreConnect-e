@@ -1,21 +1,32 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = []; 
+
     if (isset($_POST['temperature'])) {
         $temperature = $_POST['temperature'];
-        file_put_contents('temperature.txt', $temperature);
-        echo json_encode(['success' => true]);
-    } elseif (isset($_POST['humidity'])) {
-        $humidity = $_POST['humidity'];
-        file_put_contents('humidity.txt', $humidity);
-        echo json_encode(['success' => true]);
-    } elseif (isset($_POST['luminosity'])) {
-        $luminosity = $_POST['luminosity'];
-        file_put_contents('luminosity.txt', $luminosity);
-        echo json_encode(['success' => true]);
-    } else {
-        http_response_code(400);
-        echo json_encode(['error' => 'Invalid parameter']);
+        $data['temperature'] = $temperature;
     }
+
+    if (isset($_POST['humidity'])) {
+        $humidity = $_POST['humidity'];
+        $data['humidite'] = $humidity;
+    }
+
+    if (isset($_POST['luminosity'])) {
+        $luminosity = $_POST['luminosity'];
+        $data['luminosite'] = $luminosity;
+    }
+
+    $jsonData = file_get_contents('data_arduino.json');
+    $jsonDataDecoded = json_decode($jsonData, true);
+
+    $updatedData = array_merge($jsonDataDecoded, $data);
+
+    $jsonEncodedData = json_encode($updatedData, JSON_PRETTY_PRINT);
+
+    file_put_contents('data_arduino.json', $jsonEncodedData);
+
+    echo json_encode(['success' => true]);
 } else {
     http_response_code(405);
 }
